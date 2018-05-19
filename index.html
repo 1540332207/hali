@@ -1,58 +1,218 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<meta charset="utf-8">
+<title>首页</title>
 <style>
-.nav {
-	
+*{
+	margin:0 auto;}
+h1{
+	position:absolute;
+	top:80px;
+	left:0;
+width:1950px;
+height:450px;
+background:url(003.jpg);
+animation:myfirst 10s linear 4s infinite alternate;
+/* Firefox: */
+-moz-animation:myfirst 10s linear 4s infinite alternate;
+/* Safari and Chrome: */
+-webkit-animation:myfirst 10s linear 4s infinite alternate;
+/* Opera: */
+-o-animation:myfirst 10s linear 4s infinite alternate;
 }
 
-.nav ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	line-height: 3em;
+@keyframes myfirst{
+0%   {background:url(001.jpg);}
+50%  {background:url(003.jpg);}
+100%  {background:url(002.jpg);}
+
 }
 
-.nav li {
-	margin-bottom: 10px;
-	
+@-moz-keyframes myfirst{
+0%   {background:url(001.jpg);}
+50%  {background:url(003.jpg);}
+100%  {background:url(002.jpg);}
 }
-a{ text-decoration:none;}
-.w {
-	display: block;
-	width: 8em;
-	font: bold;
-	color: #000;
+@-webkit-keyframes myfirst{
+0%   {background:url(001.jpg);}
+50%  {background:url(003.jpg);}
+100%  {background:url(002.jpg);}
+}
+
+@-o-keyframes myfirst{
+0%   {background:url(001.jpg);}
+50%  {background:url(003.jpg);}
+100%  {background:url(002.jpg);}
+}
+
+.ul1{  margin:0;
+left:0;
+padding-left:0;
+padding-top:10px;
+padding-bottom:10px;
+   width:1950px;
+background-color:rgb(102,102,102);}
+
+.font1{
+	position: absolute;
+	top: 10px;
+	right: 100px;
+}
+.font1 a{
+	color:#000;
+	text-decoration:none;}
+.font1 a:hover{
+		padding:5px 5px;
+		background-color:rgb(204,204,204)}
+		
+		
+.font2{
+	position:absolute;
+top:10px;
+right:140px;}
+.font2 a{
+	color:#000;
+	text-decoration:none;}
+.font2 a:hover{
+		padding:5px 5px;
+		background-color:rgb(204,204,204)}
+
+.font3{
+	position:absolute;
+	left:90px}
+
+.font4{
+	
+	position:relative;
+	left:320px;
+	color:rgb(255,255,255);
+	}
+	.font4 a{
+	color:rgb(255,255,255);
+	text-decoration:none;}	
+.font4 a:hover{
+		padding:10px 10px;
+		background-color:rgb(51,51,51)}
+.font5{
+	position:relative;
+	left:420px;}
+	.font5 a{
+	color:rgb(255,255,255);
+	text-decoration:none;}	
+.font5 a:hover{
+		padding:10px 10px;
+		background-color:rgb(51,51,51)}
+.font6{
+	position:relative;
+	left:520px;}
+	.font6 a{
+	color:rgb(255,255,255);
+	text-decoration:none;}	
+.font6 a:hover{
+		padding:10px 10px;
+		background-color:rgb(51,51,51)}
+.font7{
+	position:relative;
+	left:620px;}
+	.font7 a{
+	color:rgb(255,255,255);
+	text-decoration:none;}	
+.font7 a:hover{
+		padding:10px 10px;
+		background-color:rgb(51,51,51)}
+.font8{
+	position:relative;
+	left:720px;}
+	
+	.font8 a{
+	color:rgb(255,255,255);
+	text-decoration:none;}	
+.font8 a:hover{
+		padding:10px 10px;
+		background-color:rgb(51,51,51)}
+
+
+.table{
+	position: absolute;
+	left: 12%;
+	top: 66%;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.bottom{
+	position: absolute;
+	top: 250%;
+	left:12%;}
+	
+.table tr td.scale a{float:left;}	
+.table tr td.scale  a:hover {
+	-moz-transform: translateX(-10px);
+	-webkit-transform: translateX(-10px);
+	-o-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	transform: translateX(-10px);
+    opacity:0.9;
+
+
+}
+#footer{
+	position: absolute;
 	text-align: center;
-	padding-left: 10px;
-	text-decoration: none;
-	background-color: #CCC;
-	border-radius: 90%;
+	background-color:rgb(51,51,51);
+	margin: 0px;
+	padding: 0px;
+	bottom: -1413px;
+	;
+	height: 200px;
+	width:1950px;
+	color:rgb(204,204,204);
+	left: 2px;
 }
-
-.nav a:hover {
-	background-color: #E6E6FA;
+#footer p{
+	margin:0px; padding:2px;
 }
+hr{
+	opacity:0.1;}
 </style>
 </head>
 
-<body>
-	<div class="nav">
-		<ul>
-			<li class="w">班级信息</li>
-			<li><a href="classadd" target="main">增加班级</a></li>
-			<li><a href="classselect" target="main">查询班级</a></li>
-			<li><a href="classupdate" target="main">修改班级</a></li>
-			<li><a href="classdelete" target="main">删除班级</a></li>
-			<li class="w">学生基本信息</li>
-			<li><a href="studentadd" target="main">增加学生</a></li>
-			<li><a href="stuchaxun1" target="main">查询学生</a></li>
-			<li><a href="studentupdate" target="main">修改学生</a></li>
-			<li><a href="studentdelete" target="main">删除学生</a></li>
+<body><div>
+<ul >
+<il class="font2"><a href="#">登录</a></il>
+<il class="font1"><a href="注册.html " target="_blank">注册</a></il>
+</ul><br><br><ul class="ul1">
+<il class="font4"><a href="index.html"><b>首页</b></a></il>
 
-		</ul>
+<il class="font5"><a href="企业介绍.html" target="_blank"><b>企业介绍</b></a></il>
+<il class="font6"><a href="产品介绍.html" target="_blank"><b>产品介绍</b></a></il>
+<il class="font7"><a href="人才招聘.html" target="_blank"><b>人才招聘</b></a></il>
+<il class="font8"><a href="商城.html" target="_blank"><b>商城</b></a></il></ul>
+</div><div>
+<h1></h1></div>
+<div>
+<table width="1500"  height="1500" border="0" class="table">
+  <tr >
+    <td rowspan="2" class="scale"><a href="#"><img src="p10-mobilephone_cn2.jpg" width="700" height="804"></a></td>
+  <td class="scale"><a href="#"><img src="index/2131.png" width="700" height="342"></a></td>
+  </tr>
+  <tr>
+    <td class="scale"><a href="#"><img src="index/BA1A.tmp.png" width="700" height="342"></a></td>
+
+  </tr>
+  <tr>
+    <td class="scale"><a href="#"><img src="index/7DFE.tmp.png" width="700" height="342"></a></td>
+    <td class="scale"><a href="#"><img src="index/001211.jpg" width="750" height="342"></a></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="scale"><a href="#"><img src="index/0120121.png" width="1470" height="300"></a></td>
+  </tr>
+</table></div>
+
+<div id="footer"><center>
+		<p>版权&copy; 2013 benro|<br> 法律事宜 隐私 |<br> 订阅 RS|<br> 京ICP备123456789</p></center>
 	</div>
 </body>
 </html>
